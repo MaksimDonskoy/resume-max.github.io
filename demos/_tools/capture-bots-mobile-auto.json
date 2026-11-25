@@ -1,0 +1,662 @@
+[
+  {
+    "url": "demos/bots/shop-bot/index.html",
+    "out": "image/portfolio/bots/shop-bot/cover.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/shop-bot/index.html",
+    "out": "image/portfolio/bots/shop-bot/01.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/shop-bot/index.html",
+    "out": "image/portfolio/bots/shop-bot/02.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      },
+      {
+        "wait": 200
+      },
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/booking-bot/index.html",
+    "out": "image/portfolio/bots/booking-bot/cover.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/booking-bot/index.html",
+    "out": "image/portfolio/bots/booking-bot/01.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/booking-bot/index.html",
+    "out": "image/portfolio/bots/booking-bot/02.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      },
+      {
+        "wait": 200
+      },
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/support-ai/index.html",
+    "out": "image/portfolio/bots/support-ai/cover.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/support-ai/index.html",
+    "out": "image/portfolio/bots/support-ai/01.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/support-ai/index.html",
+    "out": "image/portfolio/bots/support-ai/02.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      },
+      {
+        "wait": 200
+      },
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/subscribe-bot/index.html",
+    "out": "image/portfolio/bots/subscribe-bot/cover.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/subscribe-bot/index.html",
+    "out": "image/portfolio/bots/subscribe-bot/01.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/subscribe-bot/index.html",
+    "out": "image/portfolio/bots/subscribe-bot/02.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      },
+      {
+        "wait": 200
+      },
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/order-track/index.html",
+    "out": "image/portfolio/bots/order-track/cover.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/order-track/index.html",
+    "out": "image/portfolio/bots/order-track/01.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/bots/order-track/index.html",
+    "out": "image/portfolio/bots/order-track/02.webp",
+    "width": 420,
+    "height": 860,
+    "scale": 1,
+    "selector": "[data-phone]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      },
+      {
+        "wait": 200
+      },
+      {
+        "click": "#kb button.btn:nth-child(1)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/data-flow/index.html",
+    "out": "image/portfolio/automation/data-flow/cover.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/data-flow/index.html",
+    "out": "image/portfolio/automation/data-flow/01.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "fill": [
+          "[data-search]",
+          "Push"
+        ]
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/data-flow/index.html",
+    "out": "image/portfolio/automation/data-flow/02.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "[data-run]"
+      },
+      {
+        "wait": 250
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/price-watch/index.html",
+    "out": "image/portfolio/automation/price-watch/cover.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/price-watch/index.html",
+    "out": "image/portfolio/automation/price-watch/01.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "fill": [
+          "[data-search]",
+          "Push"
+        ]
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/price-watch/index.html",
+    "out": "image/portfolio/automation/price-watch/02.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "[data-run]"
+      },
+      {
+        "wait": 250
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/stock-sync/index.html",
+    "out": "image/portfolio/automation/stock-sync/cover.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/stock-sync/index.html",
+    "out": "image/portfolio/automation/stock-sync/01.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "fill": [
+          "[data-search]",
+          "Push"
+        ]
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/stock-sync/index.html",
+    "out": "image/portfolio/automation/stock-sync/02.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "[data-run]"
+      },
+      {
+        "wait": 250
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/crm-connect/index.html",
+    "out": "image/portfolio/automation/crm-connect/cover.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/crm-connect/index.html",
+    "out": "image/portfolio/automation/crm-connect/01.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "fill": [
+          "[data-search]",
+          "Push"
+        ]
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/crm-connect/index.html",
+    "out": "image/portfolio/automation/crm-connect/02.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "[data-run]"
+      },
+      {
+        "wait": 250
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/ai-content/index.html",
+    "out": "image/portfolio/automation/ai-content/cover.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/ai-content/index.html",
+    "out": "image/portfolio/automation/ai-content/01.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "fill": [
+          "[data-search]",
+          "Push"
+        ]
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/automation/ai-content/index.html",
+    "out": "image/portfolio/automation/ai-content/02.webp",
+    "width": 1440,
+    "height": 900,
+    "scale": 1,
+    "selector": "[data-dashboard]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": "[data-run]"
+      },
+      {
+        "wait": 250
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/fit-track/index.html",
+    "out": "image/portfolio/mobile/fit-track/cover.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/fit-track/index.html",
+    "out": "image/portfolio/mobile/fit-track/01.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(2)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/fit-track/index.html",
+    "out": "image/portfolio/mobile/fit-track/02.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(3)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/money-flow/index.html",
+    "out": "image/portfolio/mobile/money-flow/cover.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/money-flow/index.html",
+    "out": "image/portfolio/mobile/money-flow/01.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(2)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/money-flow/index.html",
+    "out": "image/portfolio/mobile/money-flow/02.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(3)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/food-go/index.html",
+    "out": "image/portfolio/mobile/food-go/cover.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/food-go/index.html",
+    "out": "image/portfolio/mobile/food-go/01.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(2)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/food-go/index.html",
+    "out": "image/portfolio/mobile/food-go/02.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(3)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/task-space/index.html",
+    "out": "image/portfolio/mobile/task-space/cover.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/task-space/index.html",
+    "out": "image/portfolio/mobile/task-space/01.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(2)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/task-space/index.html",
+    "out": "image/portfolio/mobile/task-space/02.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(3)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/city-guide/index.html",
+    "out": "image/portfolio/mobile/city-guide/cover.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/city-guide/index.html",
+    "out": "image/portfolio/mobile/city-guide/01.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(3)"
+      }
+    ],
+    "waitMs": 600
+  },
+  {
+    "url": "demos/mobile/city-guide/index.html",
+    "out": "image/portfolio/mobile/city-guide/02.webp",
+    "width": 390,
+    "height": 844,
+    "scale": 1,
+    "selector": "[data-device]",
+    "quality": 84,
+    "actions": [
+      {
+        "click": ".nav:nth-child(3)"
+      }
+    ],
+    "waitMs": 600
+  }
+]

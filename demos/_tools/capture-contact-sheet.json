@@ -1,0 +1,10 @@
+[
+  {
+    "url": "demos/_tools/contact-sheet.html",
+    "width": 1600,
+    "height": 2200,
+    "scale": 1,
+    "out": "demos/_tools/contact-sheet.webp",
+    "quality": 80
+  }
+]

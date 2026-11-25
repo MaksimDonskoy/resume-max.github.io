@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MONO — editorial fashion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --black:#0a0a0a; --white:#fafafa; --gray:#666; --line:rgba(0,0,0,.12); }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Inter, system-ui, sans-serif; background: var(--white); color: var(--black); }
+    a { text-decoration: none; color: inherit; }
+    .serif { font-family: "Bodoni Moda", Georgia, serif; }
+
+    .announce { text-align: center; padding: 10px; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; border-bottom: 1px solid var(--line); }
+
+    header { display: flex; align-items: center; justify-content: space-between; padding: 20px 32px; border-bottom: 1px solid var(--line); }
+    .logo { font-family: "Bodoni Moda", serif; font-size: 1.6rem; letter-spacing: .35em; }
+    nav ul { display: flex; gap: 28px; list-style: none; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+    .cart { font-size: 12px; letter-spacing: .1em; }
+
+    .hero {
+      display: grid; grid-template-columns: 1.2fr 1fr;
+      min-height: 85vh; border-bottom: 1px solid var(--line);
+    }
+    .hero-copy { display: flex; flex-direction: column; justify-content: flex-end; padding: 48px 40px 56px; border-right: 1px solid var(--line); }
+    .hero-copy h1 {
+      font-family: "Bodoni Moda", serif;
+      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-weight: 400; line-height: .95; margin-bottom: 24px;
+    }
+    .hero-copy p { max-width: 32ch; color: var(--gray); font-size: 15px; margin-bottom: 32px; }
+    .cta {
+      display: inline-block; align-self: flex-start;
+      padding: 14px 32px; background: var(--black); color: var(--white);
+      font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
+    }
+    .hero-visual { background: var(--black); position: relative; overflow: hidden; }
+    .hero-visual::before {
+      content: "AW / 25";
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      font-family: "Bodoni Moda", serif; font-size: 8rem; color: rgba(255,255,255,.08);
+    }
+    .hero-visual p {
+      position: absolute; bottom: 32px; left: 32px; right: 32px;
+      color: #ccc; font-size: 13px; line-height: 1.5;
+    }
+
+    .editorial { padding: 64px 32px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: var(--line); border-bottom: 1px solid var(--line); }
+    .editorial article { background: var(--white); padding: 28px; min-height: 220px; display: flex; flex-direction: column; justify-content: flex-end; }
+    .editorial span { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--gray); margin-bottom: 8px; }
+    .editorial h2 { font-family: "Bodoni Moda", serif; font-size: 1.5rem; font-weight: 400; }
+
+    .lookbook { padding: 56px 32px; }
+    .lookbook-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 32px; }
+    .lookbook-head h2 { font-family: "Bodoni Moda", serif; font-size: 2rem; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .tile { aspect-ratio: 3/4; background: #e8e8e8; position: relative; overflow: hidden; }
+    .tile:nth-child(odd) { background: #111; }
+    .tile figcaption {
+      position: absolute; bottom: 0; left: 0; right: 0; padding: 16px;
+      font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+      color: #fff; background: linear-gradient(transparent, rgba(0,0,0,.7));
+    }
+    .tile:nth-child(even) figcaption { color: var(--black); background: linear-gradient(transparent, rgba(255,255,255,.9)); }
+
+    footer { padding: 32px; display: flex; justify-content: space-between; font-size: 11px; letter-spacing: .08em; color: var(--gray); border-top: 1px solid var(--line); }
+
+    @media (max-width: 900px) {
+      nav ul { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-visual { min-height: 320px; }
+      .editorial, .grid-4 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <p class="announce">Free shipping on orders over €180 — autumn edit now live</p>
+  <header>
+    <a href="index.html" class="logo">MONO</a>
+    <nav>
+      <ul>
+        <li><a href="catalog.html">Shop</a></li>
+        <li><a href="#lookbook">Lookbook</a></li>
+        <li><a href="#about">Journal</a></li>
+      </ul>
+    </nav>
+    <a href="catalog.html" class="cart">Bag (2)</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Quiet<br>structure.</h1>
+      <p>Tailored wool, raw silk, and architectural silhouettes for the city wardrobe. Designed in Berlin, produced in limited runs.</p>
+      <a href="catalog.html" class="cta">View collection</a>
+    </div>
+    <div class="hero-visual">
+      <p>Coat «Column» · double-faced cashmere · ivory &amp; ink — shot on location, Museum Island.</p>
+    </div>
+  </section>
+
+  <section class="editorial" id="about">
+    <article>
+      <span>Material</span>
+      <h2>Italian mills, OEKO-TEX certified lining</h2>
+    </article>
+    <article>
+      <span>Craft</span>
+      <h2>Each piece numbered — max 400 units per style</h2>
+    </article>
+    <article>
+      <span>Care</span>
+      <h2>Repair program: free hemming for two years</h2>
+    </article>
+  </section>
+
+  <section class="lookbook" id="lookbook">
+    <div class="lookbook-head">
+      <h2>Autumn / Winter</h2>
+      <a href="catalog.html" style="font-size:11px;letter-spacing:.15em;text-transform:uppercase">Shop all →</a>
+    </div>
+    <div class="grid-4">
+      <figure class="tile"><figcaption>Structured blazer · €420</figcaption></figure>
+      <figure class="tile"><figcaption>Wide trouser · €240</figcaption></figure>
+      <figure class="tile"><figcaption>Merino knit · €190</figcaption></figure>
+      <figure class="tile"><figcaption>Leather tote · €310</figcaption></figure>
+    </div>
+  </section>
+
+  <footer>
+    <span>MONO Studio GmbH</span>
+    <span>Imprint · Privacy · Contact</span>
+  </footer>
+</body>
+</html>

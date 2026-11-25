@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Maxim Donskoy — designer and developer: marketplace cards, branding, web, bots, mobile apps, and business automation." data-i18n-content="meta.description">
+    <meta name="theme-color" content="#0f0f1a">
+    <title data-i18n="meta.title">Maxim Donskoy</title>
+    <script>document.documentElement.classList.add("presentation-loading");</script>
+    <link rel="icon" href="image/favicon.svg?v=1" type="image/svg+xml">
+    <link rel="icon" href="image/favicon.ico?v=2" sizes="16x16 32x32 48x48">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=25">
+    <link rel="stylesheet" href="css/commercial.css?v=1">
+  </head>
+  <body>
+    <a class="skip-link" href="#hero" data-i18n="accessibility.skip">Skip to content</a>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <span class="scroll-progress__bar"></span>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <a class="site-logo" href="#hero" aria-label="Donskoy Maxim Vladislavovich — home" data-i18n-aria-label="accessibility.home">
+          <span class="site-logo__name" data-i18n="header.name">Maxim Donskoy</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false" data-i18n-aria-label="accessibility.menuOpen">
+          <span class="menu-toggle__line" aria-hidden="true"></span>
+          <span class="menu-toggle__line" aria-hidden="true"></span>
+          <span class="menu-toggle__line" aria-hidden="true"></span>
+        </button>
+
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation" data-i18n-aria-label="accessibility.mainNavigation">
+          <ul class="primary-navigation__list">
+            <li><a class="primary-navigation__link" href="#services" data-i18n="nav.services">Services</a></li>
+            <li><a class="primary-navigation__link" href="#portfolio" data-nav-portfolio data-i18n="nav.portfolio" hidden>Portfolio</a></li>
+            <li><a class="primary-navigation__link" href="#about" data-i18n="nav.about">About</a></li>
+            <li><a class="primary-navigation__link" href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a class="primary-navigation__link" href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a class="primary-navigation__link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <label class="language-picker">
+            <span class="visually-hidden" data-i18n="accessibility.language">Language</span>
+            <select class="language-picker__select" id="language-select" name="language" aria-label="Language" data-i18n-aria-label="accessibility.language">
+              <option value="en" lang="en">EN</option>
+              <option value="ru" lang="ru">RU</option>
+              <option value="de" lang="de">DE</option>
+              <option value="fr" lang="fr">FR</option>
+            </select>
+          </label>
+
+          <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false" data-i18n-aria-label="accessibility.themeLight">
+            <span class="theme-toggle__icon" aria-hidden="true">☀️</span>
+          </button>
+
+          <a class="button button--primary header-cv-link" href="files/resume-en.pdf" download="resume-en.pdf" lang="en" data-cv-current>
+            <span data-i18n="actions.downloadCv">Download CV</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="hero" aria-labelledby="hero-title">
+        <div class="container hero__layout">
+          <div class="hero__content reveal">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Hello, I'm</p>
+            <h1 class="hero__title" id="hero-title" data-i18n="hero.name">Donskoy Maxim Vladislavovich</h1>
+            <p class="hero__role">
+              <span class="hero__role-prefix" data-i18n="hero.rolePrefix">I'm a</span>
+              <span class="typewriter" data-i18n="hero.role">Designer &amp; Developer for digital products and automation</span>
+              <span class="typewriter__caret" aria-hidden="true"></span>
+            </p>
+            <p class="hero__description" data-i18n="hero.description">Over 7 years I deliver commercial design and full-cycle development: marketplace cards, ads, branding and packaging, websites, bots, mobile apps, and business automation.</p>
+            <div class="hero__actions">
+              <a class="button button--primary hero-cv-link" href="files/resume-en.pdf" download="resume-en.pdf" lang="en" data-cv-current data-i18n="actions.downloadCv">Download CV</a>
+              <a class="button button--secondary" href="#contact" data-i18n="actions.contactMe">Contact me</a>
+            </div>
+          </div>
+
+          <div class="hero__portrait reveal">
+            <div class="portrait-frame">
+              <img class="portrait-frame__image" src="image/mainPhoto.png" alt="Portrait of Donskoy Maxim Vladislavovich" data-i18n-alt="accessibility.portrait" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+              <span class="portrait-frame__fallback" role="img" aria-label="Maxim Donskoy initials" data-i18n-aria-label="accessibility.initials" hidden>MD</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="services.eyebrow">What I offer</p>
+            <h2 class="section-heading__title" id="services-title" data-i18n="services.title">Services</h2>
+          </div>
+          <div class="services-groups">
+            <div class="services-group">
+              <h3 class="services-group__title reveal" data-i18n="services.designGroup">Design</h3>
+              <div class="services-grid">
+                <article class="service-card reveal" data-service-category="marketplace">
+                  <span class="service-card__icon" aria-hidden="true">▣</span>
+                  <h4 class="service-card__title" data-i18n="services.marketplace.title">Marketplace cards</h4>
+                  <p class="service-card__description" data-i18n="services.marketplace.description">Product card design for marketplaces with clear visuals and conversion-focused layouts.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.marketplace.item1">Infographics for Wildberries and Ozon</li>
+                    <li data-i18n="services.marketplace.item2">Main image design</li>
+                    <li data-i18n="services.marketplace.item3">Additional slides</li>
+                    <li data-i18n="services.marketplace.item4">Complete product card design</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="marketplace" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+                <article class="service-card reveal" data-service-category="advertising">
+                  <span class="service-card__icon" aria-hidden="true">◈</span>
+                  <h4 class="service-card__title" data-i18n="services.advertising.title">Advertising creatives</h4>
+                  <p class="service-card__description" data-i18n="services.advertising.description">Visual materials for campaigns, social media, and commercial promotions.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.advertising.item1">Advertising banners</li>
+                    <li data-i18n="services.advertising.item2">Social media creatives</li>
+                    <li data-i18n="services.advertising.item3">Posters</li>
+                    <li data-i18n="services.advertising.item4">Commercial visual materials</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="advertising" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+                <article class="service-card reveal" data-service-category="ai-photo">
+                  <span class="service-card__icon" aria-hidden="true">◉</span>
+                  <h4 class="service-card__title" data-i18n="services.aiPhoto.title">AI photoshoots</h4>
+                  <p class="service-card__description" data-i18n="services.aiPhoto.description">Product and commercial imagery created with AI-assisted photography workflows.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.aiPhoto.item1">AI-assisted product photography</li>
+                    <li data-i18n="services.aiPhoto.item2">Commercial visual scenes</li>
+                    <li data-i18n="services.aiPhoto.item3">Product photos</li>
+                    <li data-i18n="services.aiPhoto.item4">Background and environment replacement</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="ai-photo" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+                <article class="service-card reveal" data-service-category="web-design">
+                  <span class="service-card__icon" aria-hidden="true">▭</span>
+                  <h4 class="service-card__title" data-i18n="services.webDesign.title">Web design</h4>
+                  <p class="service-card__description" data-i18n="services.webDesign.description">Interface and website design focused on clarity, usability, and responsive layouts.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.webDesign.item1">UI/UX design</li>
+                    <li data-i18n="services.webDesign.item2">Website design</li>
+                    <li data-i18n="services.webDesign.item3">Mobile app design</li>
+                    <li data-i18n="services.webDesign.item4">Interface redesign</li>
+                    <li data-i18n="services.webDesign.item5">Responsive layouts</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="web-design" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+                <article class="service-card reveal" data-service-category="branding">
+                  <span class="service-card__icon" aria-hidden="true">✦</span>
+                  <h4 class="service-card__title" data-i18n="services.branding.title">Logos and branding</h4>
+                  <p class="service-card__description" data-i18n="services.branding.description">Brand identity systems that stay consistent across digital and print touchpoints.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.branding.item1">Logo development</li>
+                    <li data-i18n="services.branding.item2">Corporate identity</li>
+                    <li data-i18n="services.branding.item3">Visual identity</li>
+                    <li data-i18n="services.branding.item4">Brand materials</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="branding" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+                <article class="service-card reveal" data-service-category="printing">
+                  <span class="service-card__icon" aria-hidden="true">▤</span>
+                  <h4 class="service-card__title" data-i18n="services.printing.title">Print and packaging</h4>
+                  <p class="service-card__description" data-i18n="services.printing.description">Print-ready layouts and packaging design for physical brand materials.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.printing.item1">Business cards</li>
+                    <li data-i18n="services.printing.item2">Flyers</li>
+                    <li data-i18n="services.printing.item3">Booklets</li>
+                    <li data-i18n="services.printing.item4">Catalogs</li>
+                    <li data-i18n="services.printing.item5">Packaging design</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="printing" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="services-group">
+              <h3 class="services-group__title reveal" data-i18n="services.developmentGroup">Development</h3>
+              <div class="services-grid">
+                <article class="service-card reveal" data-service-category="web-development">
+                  <span class="service-card__icon" aria-hidden="true">&lt;/&gt;</span>
+                  <h4 class="service-card__title" data-i18n="services.webDev.title">Website development</h4>
+                  <p class="service-card__description" data-i18n="services.webDev.description">From landing pages to web applications, including improvements to existing projects.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.webDev.item1">Landing pages</li>
+                    <li data-i18n="services.webDev.item2">Corporate websites</li>
+                    <li data-i18n="services.webDev.item3">Online stores</li>
+                    <li data-i18n="services.webDev.item4">Web applications</li>
+                    <li data-i18n="services.webDev.item5">Existing project improvements</li>
+                    <li data-i18n="services.webDev.item6">Technical issue fixes</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="web-development" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+                <article class="service-card reveal" data-service-category="bots">
+                  <span class="service-card__icon" aria-hidden="true">⌘</span>
+                  <h4 class="service-card__title" data-i18n="services.bots.title">Bot development</h4>
+                  <p class="service-card__description" data-i18n="services.bots.description">Messenger bots and mini apps with practical integrations for business workflows.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.bots.item1">Telegram bots</li>
+                    <li data-i18n="services.bots.item2">Chatbots</li>
+                    <li data-i18n="services.bots.item3">Telegram Mini Apps</li>
+                    <li data-i18n="services.bots.item4">Integrations with external services</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="bots" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+                <article class="service-card reveal" data-service-category="automation">
+                  <span class="service-card__icon" aria-hidden="true">⟳</span>
+                  <h4 class="service-card__title" data-i18n="services.automation.title">Automation and integrations</h4>
+                  <p class="service-card__description" data-i18n="services.automation.description">Practical automation for data processing, store workflows, and API-connected systems.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.automation.item1">Parsers</li>
+                    <li data-i18n="services.automation.item2">API integrations</li>
+                    <li data-i18n="services.automation.item3">Business process automation</li>
+                    <li data-i18n="services.automation.item4">Data processing</li>
+                    <li data-i18n="services.automation.item5">Online store automation</li>
+                    <li data-i18n="services.automation.item6">AI-powered solutions</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="automation" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+                <article class="service-card reveal" data-service-category="mobile">
+                  <span class="service-card__icon" aria-hidden="true">◫</span>
+                  <h4 class="service-card__title" data-i18n="services.mobile.title">Mobile applications</h4>
+                  <p class="service-card__description" data-i18n="services.mobile.description">Cross-platform mobile development, improvements, and store release preparation.</p>
+                  <ul class="service-card__list">
+                    <li data-i18n="services.mobile.item1">Mobile app development</li>
+                    <li data-i18n="services.mobile.item2">Cross-platform development</li>
+                    <li data-i18n="services.mobile.item3">App improvements</li>
+                    <li data-i18n="services.mobile.item4">Store preparation and publishing</li>
+                  </ul>
+                  <div class="service-card__actions">
+                    <button class="button button--secondary" type="button" data-service-view="mobile" hidden data-i18n="services.viewWorks">View works</button>
+                    <a class="button button--primary" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="services.discuss">Discuss project</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio" aria-labelledby="portfolio-title" hidden>
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="portfolio.eyebrow">Selected works</p>
+            <h2 class="section-heading__title" id="portfolio-title" data-i18n="portfolio.title">Portfolio</h2>
+          </div>
+          <div class="portfolio-filters" data-portfolio-filters role="group" aria-label="Portfolio filters" data-i18n-aria-label="portfolio.filtersLabel"></div>
+          <div class="portfolio-grid" data-portfolio-grid></div>
+          <p class="portfolio-empty" data-portfolio-empty hidden data-i18n="portfolio.emptyCategory">No published projects in this category yet.</p>
+        </div>
+      </section>
+
+      <section class="section section--about" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="about.eyebrow">Get to know me</p>
+            <h2 class="section-heading__title" id="about-title" data-i18n="about.title">Profile Summary</h2>
+          </div>
+          <article class="glass-card summary-card reveal">
+            <p data-i18n="about.summary">Designer and developer with 7 years of experience across commercial visuals and digital products. I design marketplace cards, advertising creatives, brand identities, print materials and AI product photography; build websites and mobile apps; create messenger bots; and automate business workflows. Practical problem-solver, fast learner, and reliable collaborator.</p>
+            <p data-i18n="about.services">My work covers ten directions: marketplace cards, advertising creatives, AI photoshoots, web design, branding, print and packaging, website development, bots, automation and integrations, and mobile applications — from concept to a finished, usable result.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="education.eyebrow">Academic background</p>
+            <h2 class="section-heading__title" id="education-title" data-i18n="education.title">Education</h2>
+          </div>
+          <article class="glass-card education-card reveal">
+            <div class="education-card__icon" aria-hidden="true">✦</div>
+            <div>
+              <h3 data-i18n="education.degree">Bachelor of Engineering in Software Engineering</h3>
+              <p class="education-card__institution" data-i18n="education.institution">Ulyanovsk State University</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="experience.eyebrow">What I've done</p>
+            <h2 class="section-heading__title" id="experience-title" data-i18n="experience.title">Work Experience</h2>
+          </div>
+          <article class="glass-card experience-card reveal">
+            <div class="experience-card__header">
+              <div>
+                <h3 data-i18n="experience.developerRole">Designer &amp; Full-Stack Developer</h3>
+              </div>
+              <div class="experience-card__meta">
+                <span data-i18n="experience.developerPeriod">2018–2026</span>
+                <span data-i18n="experience.developerDuration">7 years</span>
+              </div>
+            </div>
+            <ul class="experience-card__duties">
+              <li><strong data-i18n="experience.commercialDesign">Commercial Design</strong>: <span data-i18n="experience.commercialDesignDetails">Designed marketplace product cards, advertising creatives, AI product photography, logos and brand systems, print layouts and packaging for e-commerce and service brands.</span></li>
+              <li><strong data-i18n="experience.webDevelopment">Web Design &amp; Development</strong>: <span data-i18n="experience.webDevelopmentDetails">Designed and built landing pages, corporate sites and web apps; modernized existing projects with React, Vue, Node.js, PHP, Laravel, Next.js, WordPress and Tilda; improved performance, SEO and analytics.</span></li>
+              <li><strong data-i18n="experience.mobileDevelopment">Mobile Development</strong>: <span data-i18n="experience.mobileDevelopmentDetails">Developed cross-platform apps with Flutter and React Native; prepared and published releases for Google Play, App Store, RuStore, AppGallery, and Galaxy Store, using Firebase, Fastlane, and Codemagic.</span></li>
+              <li><strong data-i18n="experience.messengerBots">Messenger Bots</strong>: <span data-i18n="experience.messengerBotsDetails">Built bots and integrations for Telegram, WhatsApp, Discord, VK, and Slack using Node.js, Python, aiogram, grammY, Telegram Mini Apps, OpenAI API, Redis, and PostgreSQL.</span></li>
+              <li><strong data-i18n="experience.automation">Automation &amp; Integrations</strong>: <span data-i18n="experience.automationDetails">Built parsers, API integrations, store and CRM workflows, data pipelines and AI-assisted content automation to reduce manual work.</span></li>
+            </ul>
+          </article>
+          <article class="glass-card experience-card reveal">
+            <div class="experience-card__header">
+              <div>
+                <h3 data-i18n="experience.supportRole">IT Support Specialist</h3>
+                <p class="experience-card__company" data-i18n="experience.company">Company Name (Confidential)</p>
+              </div>
+              <div class="experience-card__meta">
+                <span data-i18n="experience.location">Russia</span>
+                <span data-i18n="experience.supportDuration">5 years</span>
+              </div>
+            </div>
+            <ul class="experience-card__duties">
+              <li data-i18n="experience.duty1">Provided technical support to internal teams and clients, resolving hardware and software issues.</li>
+              <li data-i18n="experience.duty2">Maintained IT infrastructure and network availability.</li>
+              <li data-i18n="experience.duty3">Troubleshot technical problems and trained users.</li>
+              <li data-i18n="experience.duty4">Created and maintained system documentation.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="skills.eyebrow">What I work with</p>
+            <h2 class="section-heading__title" id="skills-title" data-i18n="skills.title">Technical Skills</h2>
+          </div>
+          <div class="skills-carousel" data-skills-carousel role="region" aria-roledescription="carousel" aria-label="Technical skills carousel" data-i18n-aria-label="skills.carouselLabel">
+            <div class="skills-grid skills-carousel__track" data-skills-track tabindex="0" aria-label="Use the arrow keys to browse skill groups" data-i18n-aria-label="skills.carouselTrack">
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.design">Design</h3>
+              <ul class="skill-list" aria-label="Design skills" data-i18n-aria-label="accessibility.designSkills">
+                <li data-icon="figma">Figma</li>
+                <li data-icon="figma" data-i18n="skills.photoshop">Adobe Photoshop</li>
+                <li data-icon="figma" data-i18n="skills.illustrator">Adobe Illustrator</li>
+                <li data-icon="figma" data-i18n="skills.aiImagery">AI product photography</li>
+                <li data-icon="figma" data-i18n="skills.marketplaceGraphics">Marketplace infographics</li>
+                <li data-icon="figma" data-i18n="skills.brandIdentity">Brand identity</li>
+                <li data-icon="figma" data-i18n="skills.printPackaging">Print &amp; packaging</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.frontend">Front-End</h3>
+              <ul class="skill-list" aria-label="Front-End skills" data-i18n-aria-label="accessibility.frontendSkills">
+                <li data-icon="html5">HTML5</li><li data-icon="css3">CSS3</li><li data-icon="javascript">JavaScript</li><li data-icon="bootstrap">Bootstrap</li>
+                <li data-icon="panels-top-left" data-i18n="skills.responsiveLayouts">Responsive layouts</li>
+                <li data-icon="panels-top-left" data-i18n="skills.gridFlexbox">CSS Grid &amp; Flexbox</li>
+                <li data-icon="javascript" data-i18n="skills.domBrowserApis">DOM &amp; browser APIs</li>
+                <li data-icon="chrome" data-i18n="skills.crossBrowserTesting">Cross-browser testing</li>
+                <li data-icon="accessibility" data-i18n="skills.semanticAccessibleHtml">Semantic HTML &amp; accessibility</li>
+                <li data-icon="code-xml" data-i18n="skills.webAppDevelopment">Web application development</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.versionControl">Version Control</h3>
+              <ul class="skill-list" aria-label="Version control skills" data-i18n-aria-label="accessibility.versionControlSkills">
+                <li data-icon="git">Git</li>
+                <li data-icon="github">GitHub</li>
+                <li data-icon="git" data-i18n="skills.gitBranching">Branching and merging</li>
+                <li data-icon="git" data-i18n="skills.mergeConflictResolution">Merge conflict resolution</li>
+                <li data-icon="github" data-i18n="skills.pullRequests">Pull requests</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.tools">Tools</h3>
+              <ul class="skill-list" aria-label="Tools" data-i18n-aria-label="accessibility.tools">
+                <li data-icon="vscode">VS Code</li>
+                <li data-icon="figma">Figma</li>
+                <li data-icon="chrome">Chrome DevTools</li>
+                <li data-icon="command" data-i18n="skills.commandLine">Command line</li>
+                <li data-icon="chrome" data-i18n="skills.browserDebugging">Browser debugging</li>
+                <li data-icon="figma" data-i18n="skills.wireframesPrototypes">Wireframes and prototypes</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.programmingLanguages">Programming Languages</h3>
+              <ul class="skill-list" aria-label="Programming languages" data-i18n-aria-label="accessibility.programmingLanguages">
+                <li data-icon="code-xml">C</li>
+                <li data-icon="code-xml">C++</li>
+                <li data-icon="code-xml">Java</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.mobile">Mobile</h3>
+              <ul class="skill-list" aria-label="Mobile development technologies" data-i18n-aria-label="accessibility.mobileDevelopment">
+                <li data-icon="code-xml">Flutter</li>
+                <li data-icon="code-xml">React Native</li>
+                <li data-icon="cloud">Firebase</li>
+                <li data-icon="code-xml">Kotlin</li>
+                <li data-icon="code-xml">Swift</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.bots">Bots</h3>
+              <ul class="skill-list" aria-label="Messenger bot platforms and technologies" data-i18n-aria-label="accessibility.messengerBotSkills">
+                <li data-icon="bot">Telegram Bot API</li>
+                <li data-icon="code-xml">grammY</li>
+                <li data-icon="code-xml">aiogram</li>
+                <li data-icon="code-xml">discord.js</li>
+                <li data-icon="plug-zap">WhatsApp API</li>
+                <li data-icon="code-xml">Telegram Mini Apps</li>
+                <li data-icon="code-xml">OpenAI API</li>
+                <li data-icon="database">Redis</li>
+                <li data-icon="database">PostgreSQL</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.devops">DevOps</h3>
+              <ul class="skill-list" aria-label="DevOps technologies" data-i18n-aria-label="accessibility.devops">
+                <li data-icon="cloud">Docker</li>
+                <li data-icon="workflow">CI/CD</li>
+                <li data-icon="cloud">Nginx</li>
+                <li data-icon="cloud">VPS</li>
+                <li data-icon="git">Git</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.sitePlatforms">Website Platforms</h3>
+              <ul class="skill-list" aria-label="Website platforms and configuration" data-i18n-aria-label="accessibility.sitePlatformSkills">
+                <li data-icon="blocks" data-i18n="skills.cmsBuilders">CMS &amp; site builders</li>
+                <li data-icon="sliders-horizontal" data-i18n="skills.platformSetup">Platform configuration</li>
+                <li data-icon="code-xml" data-i18n="skills.customWebsites">Custom-built websites</li>
+                <li data-icon="globe" data-i18n="skills.siteAdaptation">Website adaptation</li>
+                <li data-icon="blocks" data-i18n="skills.cmsConfiguration">CMS configuration</li>
+                <li data-icon="cloud" data-i18n="skills.hostingDomains">Hosting &amp; domains</li>
+                <li data-icon="upload" data-i18n="skills.websiteDeployment">Website deployment</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.automation">Automation &amp; Integrations</h3>
+              <ul class="skill-list" aria-label="Business automation and integrations" data-i18n-aria-label="accessibility.automationSkills">
+                <li data-icon="workflow" data-i18n="skills.businessProcessAutomation">Business process automation</li>
+                <li data-icon="plug-zap" data-i18n="skills.apiIntegrations">API &amp; service integrations</li>
+                <li data-icon="workflow" data-i18n="skills.workflowOptimization">Workflow optimization</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.webOperations">Web Operations</h3>
+              <ul class="skill-list" aria-label="Web operations" data-i18n-aria-label="accessibility.webOperationsSkills">
+                <li data-icon="clipboard-list" data-i18n="skills.requirementsAnalysis">Requirements gathering</li>
+                <li data-icon="wrench" data-i18n="skills.technicalTroubleshooting">Technical troubleshooting</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.backend">Back-End Basics (PHP, MySQL)</h3>
+              <ul class="skill-list" aria-label="Basic back-end skills" data-i18n-aria-label="accessibility.backendSkills">
+                <li data-icon="php">PHP</li><li data-icon="mysql">MySQL</li>
+                <li data-icon="database" data-i18n="skills.databaseManagement">Database management</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.operatingSystems">Operating System</h3>
+              <ul class="skill-list" aria-label="Operating systems" data-i18n-aria-label="accessibility.operatingSystems">
+                <li data-icon="windows8">Windows</li>
+                <li data-icon="code-xml">macOS</li>
+              </ul>
+            </article>
+            <article class="glass-card skill-group reveal" role="group" aria-roledescription="slide">
+              <h3 data-i18n="skills.languages">Languages</h3>
+              <ul class="skill-list" aria-label="Spoken languages" data-i18n-aria-label="accessibility.spokenLanguages">
+                <li data-icon="languages" data-i18n="skills.russian">Russian — Native</li>
+                <li data-icon="languages" data-i18n="skills.english">English — Intermediate</li>
+              </ul>
+            </article>
+            </div>
+            <div class="skills-carousel__controls" aria-label="Skill carousel controls" data-i18n-aria-label="skills.carouselControls" hidden>
+              <button class="skills-carousel__button" type="button" data-skills-previous aria-label="Previous skill group" data-i18n-aria-label="skills.carouselPrevious">
+                <span aria-hidden="true">←</span>
+              </button>
+              <div class="skills-carousel__pagination" data-skills-pagination></div>
+              <button class="skills-carousel__button" type="button" data-skills-next aria-label="Next skill group" data-i18n-aria-label="skills.carouselNext">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="soft-skills" aria-labelledby="soft-skills-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="softSkills.eyebrow">How I work</p>
+            <h2 class="section-heading__title" id="soft-skills-title" data-i18n="softSkills.title">Soft Skills</h2>
+          </div>
+          <ul class="soft-skills-grid">
+            <li class="glass-card soft-skill reveal"><span class="soft-skill__icon" aria-hidden="true">✦</span><span data-i18n="softSkills.item1">Creative thinking with a conversion- and user-focused approach</span></li>
+            <li class="glass-card soft-skill reveal"><span class="soft-skill__icon" aria-hidden="true">↗</span><span data-i18n="softSkills.item2">Strong communication and collaboration</span></li>
+            <li class="glass-card soft-skill reveal"><span class="soft-skill__icon" aria-hidden="true">⌘</span><span data-i18n="softSkills.item3">Eagerness to learn new technologies</span></li>
+            <li class="glass-card soft-skill reveal"><span class="soft-skill__icon" aria-hidden="true">◎</span><span data-i18n="softSkills.item4">Attention to visual detail and brand consistency</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="location" aria-labelledby="location-title">
+        <div class="container">
+          <article class="glass-card location-card reveal">
+            <div>
+              <p class="eyebrow" data-i18n="location.eyebrow">Where I'm headed</p>
+              <h2 class="section-heading__title" id="location-title" data-i18n="location.title">Location Preference</h2>
+              <p data-i18n="location.description">Open to relocation or remote work within the European Union, CIS, and USA.</p>
+            </div>
+            <span class="location-card__icon" aria-hidden="true">⌖</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="process" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="process.eyebrow">How we work</p>
+            <h2 class="section-heading__title" id="process-title" data-i18n="process.title">Collaboration stages</h2>
+          </div>
+          <div class="process-steps">
+            <article class="process-step reveal">
+              <span class="process-step__number">01</span>
+              <h3 class="process-step__title" data-i18n="process.step1.title">Task discussion</h3>
+              <p class="process-step__text" data-i18n="process.step1.text">I review the brief — design, development or both — clarify the details, and propose a suitable solution.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="process-step__number">02</span>
+              <h3 class="process-step__title" data-i18n="process.step2.title">Alignment</h3>
+              <p class="process-step__text" data-i18n="process.step2.text">We discuss the scope of work, timelines, deliverables, and collaboration terms.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="process-step__number">03</span>
+              <h3 class="process-step__title" data-i18n="process.step3.title">Implementation</h3>
+              <p class="process-step__text" data-i18n="process.step3.text">I produce the visuals or product and present an intermediate or final result for review.</p>
+            </article>
+            <article class="process-step reveal">
+              <span class="process-step__number">04</span>
+              <h3 class="process-step__title" data-i18n="process.step4.title">Completion</h3>
+              <p class="process-step__text" data-i18n="process.step4.text">I apply the agreed revisions and hand over the finished files, demos, or deployable materials.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="advantages" aria-labelledby="advantages-title">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="advantages.eyebrow">Why work with me</p>
+            <h2 class="section-heading__title" id="advantages-title" data-i18n="advantages.title">Advantages</h2>
+          </div>
+          <ul class="advantages-grid">
+            <li class="advantage-item reveal"><span class="advantage-item__icon" aria-hidden="true">✦</span><span data-i18n="advantages.item1">Over 7 years across design and development</span></li>
+            <li class="advantage-item reveal"><span class="advantage-item__icon" aria-hidden="true">↗</span><span data-i18n="advantages.item2">A combination of design and programming</span></li>
+            <li class="advantage-item reveal"><span class="advantage-item__icon" aria-hidden="true">◎</span><span data-i18n="advantages.item3">End-to-end delivery: from visual concept to working product</span></li>
+            <li class="advantage-item reveal"><span class="advantage-item__icon" aria-hidden="true">⌘</span><span data-i18n="advantages.item4">Experience with non-standard projects</span></li>
+            <li class="advantage-item reveal"><span class="advantage-item__icon" aria-hidden="true">⚡</span><span data-i18n="advantages.item5">Ability to handle urgent tasks</span></li>
+            <li class="advantage-item reveal"><span class="advantage-item__icon" aria-hidden="true">◉</span><span data-i18n="advantages.item6">Modern tools and AI in design and development workflows</span></li>
+            <li class="advantage-item reveal"><span class="advantage-item__icon" aria-hidden="true">⌖</span><span data-i18n="advantages.item7">Direct communication with the specialist</span></li>
+            <li class="advantage-item reveal"><span class="advantage-item__icon" aria-hidden="true">◇</span><span data-i18n="advantages.item8">An individual approach</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="glass-card contact-card reveal">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Let's connect</p>
+            <h2 class="section-heading__title" id="contact-title" data-i18n="contact.title">Contact</h2>
+            <p data-i18n="contact.description">I work as a freelancer on design and development projects — from marketplace cards and branding to websites, bots and automation. Tell me about your task.</p>
+            <ul class="contact-links" aria-label="Contact methods" data-i18n-aria-label="accessibility.contactMethods">
+              <li class="contact-method">
+                <a class="contact-link" href="mailto:dosnkoy-maks@mail.ru" aria-label="Email dosnkoy-maks@mail.ru" data-i18n-aria-label="accessibility.emailFirst"><span class="contact-link__icon" aria-hidden="true">@</span><span>dosnkoy-maks@mail.ru</span></a>
+                <button class="copy-email" type="button" data-copy-value="dosnkoy-maks@mail.ru" aria-label="Copy email address" data-i18n-aria-label="accessibility.copyEmail"><span aria-live="polite" data-i18n="copy.default">Copy</span></button>
+              </li>
+              <li class="contact-method">
+                <a class="contact-link" href="mailto:boriskish24@gmail.com" aria-label="Email boriskish24@gmail.com" data-i18n-aria-label="accessibility.emailSecond"><span class="contact-link__icon" aria-hidden="true">@</span><span>boriskish24@gmail.com</span></a>
+                <button class="copy-email" type="button" data-copy-value="boriskish24@gmail.com" aria-label="Copy email address" data-i18n-aria-label="accessibility.copyEmail"><span aria-live="polite" data-i18n="copy.default">Copy</span></button>
+              </li>
+              <li>
+                <a class="contact-link" href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram @MErcool_git" data-i18n-aria-label="accessibility.telegram">
+                  <span class="contact-link__icon contact-link__icon--telegram" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                      <path d="M21.8 3.2 18.5 20c-.25 1.25-.95 1.55-1.95.97l-5.4-3.98-2.6 2.5c-.29.29-.54.54-1.1.54l.39-5.5L17.85 6.1c.42-.37-.09-.58-.65-.21L5.37 13.35.1 11.7c-1.15-.36-1.17-1.15.24-1.68L20.95 2.05c.96-.35 1.8.23 1.5 1.15Z"/>
+                    </svg>
+                  </span>
+                  <span>Telegram · @MErcool_git</span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="https://max.ru/u/f9LHodD0cOI2RduhXzHZbbcZy5S5L0TTsVJkbGj9M2cBd2-62b-kje-Lqmc" target="_blank" rel="noopener noreferrer" aria-label="Open MAX profile" data-i18n-aria-label="accessibility.max">
+                  <span class="contact-link__icon contact-link__icon--max" aria-hidden="true">
+                    <img src="image/Max_logo.svg" alt="" loading="lazy" decoding="async">
+                  </span>
+                  <span>MAX · <span data-i18n="contact.maxInvitation">Join me on MAX</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="slide-controls" aria-label="Slide navigation" data-i18n-aria-label="accessibility.slideNavigation">
+      <button class="slide-controls__button" type="button" data-slide-action="previous" aria-label="Previous slide" data-i18n-aria-label="accessibility.previousSlide" disabled>
+        <span aria-hidden="true">⌃</span>
+      </button>
+      <span class="slide-counter" aria-live="polite">01 / 11</span>
+      <button class="slide-controls__button" type="button" data-slide-action="next" aria-label="Next slide" data-i18n-aria-label="accessibility.nextSlide">
+        <span aria-hidden="true">⌄</span>
+      </button>
+    </nav>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p><span data-i18n="footer.copyright">© 2026 Donskoy Maxim</span> <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" data-i18n-aria-label="accessibility.backToTop">
+      <span aria-hidden="true">↑</span>
+    </button>
+    <div class="custom-cursor" aria-hidden="true"></div>
+
+    <div class="portfolio-modal" data-portfolio-modal hidden>
+      <div class="portfolio-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="portfolio-modal-title">
+        <div class="portfolio-modal__header">
+          <div>
+            <p class="portfolio-modal__eyebrow" data-portfolio-modal-category></p>
+            <h3 class="portfolio-modal__title" id="portfolio-modal-title" data-portfolio-modal-title></h3>
+          </div>
+          <button class="portfolio-modal__close" type="button" data-portfolio-modal-close aria-label="Close project details" data-i18n-aria-label="portfolio.close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="portfolio-modal__body">
+          <div class="portfolio-gallery">
+            <div class="portfolio-gallery__main">
+              <img class="portfolio-gallery__image" data-portfolio-gallery-image alt="" loading="lazy" decoding="async">
+              <button class="portfolio-gallery__nav portfolio-gallery__nav--prev" type="button" data-portfolio-gallery-prev aria-label="Previous image" data-i18n-aria-label="portfolio.previousImage" hidden>
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button class="portfolio-gallery__nav portfolio-gallery__nav--next" type="button" data-portfolio-gallery-next aria-label="Next image" data-i18n-aria-label="portfolio.nextImage" hidden>
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+            <div class="portfolio-gallery__thumbs" data-portfolio-gallery-thumbs></div>
+          </div>
+          <div class="portfolio-modal__meta">
+            <div class="portfolio-modal__block">
+              <h4 data-i18n="portfolio.task">Task</h4>
+              <p data-portfolio-modal-task></p>
+            </div>
+            <div class="portfolio-modal__block">
+              <h4 data-i18n="portfolio.solution">Solution</h4>
+              <p data-portfolio-modal-solution></p>
+            </div>
+            <div class="portfolio-modal__block">
+              <h4 data-i18n="portfolio.technologies">Technologies and tools</h4>
+              <ul class="portfolio-modal__tech" data-portfolio-modal-tech></ul>
+            </div>
+            <div class="portfolio-modal__block">
+              <h4 data-i18n="portfolio.projectType">Project type</h4>
+              <p data-portfolio-modal-type></p>
+            </div>
+            <div class="portfolio-modal__actions">
+              <a class="button button--secondary" data-portfolio-modal-link href="#" target="_blank" rel="noopener noreferrer" hidden data-i18n="portfolio.openProject">Open project</a>
+              <a class="button button--primary" data-portfolio-modal-discuss href="https://t.me/MErcool_git" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.discussSimilar">Discuss a similar project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-lightbox" data-portfolio-lightbox hidden>
+      <button class="portfolio-lightbox__close" type="button" data-portfolio-lightbox-close aria-label="Close fullscreen image" data-i18n-aria-label="portfolio.closeLightbox">
+        <span aria-hidden="true">×</span>
+      </button>
+      <button class="portfolio-lightbox__nav portfolio-lightbox__nav--prev" type="button" data-portfolio-lightbox-prev aria-label="Previous image" data-i18n-aria-label="portfolio.previousImage" hidden>
+        <span aria-hidden="true">‹</span>
+      </button>
+      <img class="portfolio-lightbox__image" data-portfolio-lightbox-image alt="" loading="lazy" decoding="async">
+      <button class="portfolio-lightbox__nav portfolio-lightbox__nav--next" type="button" data-portfolio-lightbox-next aria-label="Next image" data-i18n-aria-label="portfolio.nextImage" hidden>
+        <span aria-hidden="true">›</span>
+      </button>
+    </div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/i18n.js?v=8"></script>
+    <script src="js/portfolio-data.js?v=1"></script>
+    <script src="js/portfolio.js?v=1"></script>
+    <script src="js/main.js?v=14"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Food Go</title>
+<style>
+:root{--accent:#ef4444;--bg:#0c1018;--panel:#151c28;--text:#eef3ff;--muted:#95a3b8;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html,body{margin:0;font-family:"Segoe UI",Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.demo-badge{position:fixed;right:16px;bottom:16px;z-index:99;padding:8px 12px;border-radius:999px;background:rgba(255,196,64,.16);border:1px solid rgba(255,196,64,.45);color:#ffd977;font-size:12px;font-weight:800;letter-spacing:.08em;pointer-events:none}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+
+</style></head><body data-app>
+<div data-device style="width:390px;min-height:844px;margin:0 auto;background:#0a0f17;border-radius:28px;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;border:1px solid #243044">
+<header style="padding:16px 18px;background:#111827"><strong>Food Go</strong><p style="margin:4px 0 0;font-size:12px;color:var(--muted)">mobile demo</p></header>
+<main id="app"><section class="screen" data-screen="0"  style="padding:18px;display:grid;gap:12px;align-content:start">
+<h2 style="margin:0;font-size:22px">Рядом</h2><article style="padding:12px;border-radius:14px;background:var(--panel)">Burger demo · 24 мин</article><article style="padding:12px;border-radius:14px;background:var(--panel)">Pasta demo · 31 мин</article></section><section class="screen" data-screen="1" hidden style="padding:18px;display:grid;gap:12px;align-content:start">
+<h2 style="margin:0;font-size:22px">Корзина</h2><p>2 позиции · $24</p><button style="padding:12px;border:0;border-radius:12px;background:var(--accent);color:#fff;font-weight:800">Демо-заказ</button></section><section class="screen" data-screen="2" hidden style="padding:18px;display:grid;gap:12px;align-content:start">
+<h2 style="margin:0;font-size:22px">Адреса</h2><p>Дом · Офис (демо)</p></section></main>
+<nav style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:10px;border-top:1px solid #243044;background:#0f1624"><button class="nav" data-go="0">Меню</button><button class="nav" data-go="1">Корзина</button><button class="nav" data-go="2">Профиль</button></nav>
+</div>
+<style>.nav{padding:10px 6px;border:0;border-radius:12px;background:#172033;color:var(--text);font-size:11px}.nav.is-on{background:var(--accent);color:#061018;font-weight:700}</style>
+<script>
+function show(i){document.querySelectorAll('.screen').forEach(s=>s.hidden=Number(s.dataset.screen)!==i);document.querySelectorAll('.nav').forEach((n,idx)=>n.classList.toggle('is-on',idx===i));}
+document.querySelectorAll('.nav').forEach(b=>b.addEventListener('click',()=>show(Number(b.dataset.go))));show(0);
+</script>
+<div class="demo-badge">DEMO</div>
+<script>window.waitForDemoReady=true;document.documentElement.dataset.ready='1';</script></body></html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auto Import — калькулятор</title>
+<style>
+:root{--accent:#3b82f6;--bg:#0c1018;--panel:#151c28;--text:#eef3ff;--muted:#95a3b8;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html,body{margin:0;font-family:"Segoe UI",Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.demo-badge{position:fixed;right:16px;bottom:16px;z-index:99;padding:8px 12px;border-radius:999px;background:rgba(255,196,64,.16);border:1px solid rgba(255,196,64,.45);color:#ffd977;font-size:12px;font-weight:800;letter-spacing:.08em;pointer-events:none}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+
+</style></head><body data-app>
+
+<main style="max-width:1280px;min-height:800px;margin:0 auto;padding:48px 40px 100px;display:grid;gap:28px">
+<header style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
+  <div><p style="margin:0;color:var(--muted);font-weight:700">AUTO IMPORT</p><h1 style="margin:8px 0 0;font-size:40px;letter-spacing:-.03em">Калькулятор ввоза авто</h1></div>
+  <p style="margin:0;max-width:420px;color:var(--muted);font-size:14px">Демо-коэффициенты таможни, пошлины и сбора. Реальные ставки не используются.</p>
+</header>
+<section style="display:grid;grid-template-columns:1.1fr .9fr;gap:22px">
+  <form id="calc" style="background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:24px;display:grid;gap:16px">
+    <label style="display:grid;gap:8px">Стоимость авто, $ <input data-field="price" type="number" value="18500" min="1000" step="100" style="padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#0b111b;color:var(--text)"></label>
+    <label style="display:grid;gap:8px">Объём двигателя, л <input data-field="engine" type="number" value="2.0" min=".8" step=".1" style="padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#0b111b;color:var(--text)"></label>
+    <label style="display:grid;gap:8px">Возраст авто, лет <input data-field="age" type="number" value="3" min="0" max="20" style="padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#0b111b;color:var(--text)"></label>
+    <label style="display:grid;gap:8px">Курс EUR (демо) <input data-field="rate" type="number" value="1.08" min=".5" step=".01" style="padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#0b111b;color:var(--text)"></label>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <label style="display:grid;gap:8px">Таможня % <input data-field="customs" type="number" value="15" style="padding:12px;border-radius:12px;border:1px solid var(--line);background:#0b111b;color:var(--text)"></label>
+      <label style="display:grid;gap:8px">Пошлина % <input data-field="duty" type="number" value="10" style="padding:12px;border-radius:12px;border:1px solid var(--line);background:#0b111b;color:var(--text)"></label>
+    </div>
+    <label style="display:grid;gap:8px">Сервисный сбор, € <input data-field="fee" type="number" value="350" style="padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#0b111b;color:var(--text)"></label>
+    <button type="button" data-action="recalc" style="padding:14px;border:0;border-radius:14px;background:var(--accent);color:#fff;font-weight:800">Пересчитать</button>
+  </form>
+  <aside id="summary" style="background:linear-gradient(160deg,#1a2740,#121a2a);border:1px solid var(--line);border-radius:24px;padding:24px;display:grid;gap:14px;align-content:start">
+    <h2 style="margin:0;font-size:22px">Итог демо-расчёта</h2>
+    <div data-out="customs" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)"><span>Таможня</span><b>$0</b></div>
+    <div data-out="duty" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)"><span>Пошлина</span><b>$0</b></div>
+    <div data-out="fee" style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)"><span>Сборы</span><b>$0</b></div>
+    <div data-out="total" style="display:flex;justify-content:space-between;padding:16px 0;font-size:26px"><span>Итого</span><b style="color:#7dd3fc">$0</b></div>
+    <p style="margin:0;color:var(--muted);font-size:13px">Цифры обновляются при вводе без отправки на сервер.</p>
+  </aside>
+</section>
+</main>
+<script>
+const f=document.getElementById('calc'),s=document.getElementById('summary');
+const nf=n=>'$'+Math.round(n).toLocaleString('ru-RU');
+function val(k){return Number(f.querySelector('[data-field="'+k+'"]').value)||0}
+function recalc(){
+ const price=val('price'),rate=val('rate'),customs=price*val('customs')/100,duty=price*val('duty')/100,fee=val('fee')*rate,age=val('age'),engine=val('engine');
+ const ageCoef=age>5?1.12:age>3?1.06:1; const engineCoef=engine>2.5?1.08:1;
+ const total=(price+customs+duty+fee)*ageCoef*engineCoef;
+ s.querySelector('[data-out="customs"]').lastElementChild.textContent=nf(customs);
+ s.querySelector('[data-out="duty"]').lastElementChild.textContent=nf(duty);
+ s.querySelector('[data-out="fee"]').lastElementChild.textContent=nf(fee);
+ s.querySelector('[data-out="total"]').lastElementChild.textContent=nf(total);
+}
+f.addEventListener('input',recalc);f.querySelector('[data-action="recalc"]').addEventListener('click',recalc);recalc();
+</script>
+<div class="demo-badge">DEMO</div>
+</body></html>

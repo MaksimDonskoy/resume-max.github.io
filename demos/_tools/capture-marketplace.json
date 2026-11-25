@@ -1,0 +1,227 @@
+[
+  {
+    "url": "demos/marketplace/botanica/cover.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/botanica/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/botanica/01.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/botanica/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/botanica/02.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/botanica/02.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/botanica/03.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/botanica/03.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/botanica/04.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/botanica/04.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/pulse/cover.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/pulse/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/pulse/01.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/pulse/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/pulse/02.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/pulse/02.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/pulse/03.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/pulse/03.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/pulse/04.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/pulse/04.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/elara/cover.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/elara/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/elara/01.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/elara/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/elara/02.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/elara/02.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/elara/03.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/elara/03.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/elara/04.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/elara/04.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/tea-home/cover.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/tea-home/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/tea-home/01.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/tea-home/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/tea-home/02.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/tea-home/02.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/tea-home/03.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/tea-home/03.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/tea-home/04.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/tea-home/04.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/atlet/cover.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/atlet/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/atlet/01.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/atlet/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/atlet/02.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/atlet/02.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/atlet/03.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/atlet/03.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/marketplace/atlet/04.html",
+    "selector": "[data-card]",
+    "width": 900,
+    "height": 1200,
+    "scale": 2,
+    "out": "image/portfolio/marketplace/atlet/04.webp",
+    "quality": 84
+  }
+]

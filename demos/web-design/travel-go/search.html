@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search results — TravelGo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Fraunces:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root { --sand:#f4e9d8; --ocean:#1a6b7a; --ocean-dark:#0f4d59; --coral:#e07a4e; --ink:#2c2419; --muted:#6b5d4f; --white:#fffdf9; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Outfit,system-ui,sans-serif;background:var(--sand);color:var(--ink)}
+    a{text-decoration:none;color:inherit}
+    header{display:flex;justify-content:space-between;align-items:center;padding:16px 28px;background:var(--white);border-bottom:1px solid rgba(44,36,25,.08)}
+    .brand{font-family:Fraunces,serif;font-size:1.3rem;color:var(--ocean-dark)}
+    .summary{padding:28px 28px 16px;max-width:1100px;margin:0 auto}
+    .summary h1{font-family:Fraunces,serif;font-size:1.75rem;margin-bottom:6px}
+    .summary p{color:var(--muted);font-size:.95rem}
+    .layout{max-width:1100px;margin:0 auto;padding:0 28px 64px;display:grid;grid-template-columns:260px 1fr;gap:28px}
+    .filters{background:var(--white);border-radius:16px;padding:20px;height:fit-content}
+    .filters h2{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+    .chip{display:block;padding:10px 12px;border-radius:10px;margin-bottom:8px;font-size:.9rem}
+    .chip.on{background:var(--sand);color:var(--ocean-dark);font-weight:600}
+    .results{display:grid;gap:16px}
+    .result{display:grid;grid-template-columns:200px 1fr auto;gap:20px;background:var(--white);border-radius:18px;overflow:hidden;border:1px solid var(--sand-deep)}
+    .thumb{background:linear-gradient(145deg,var(--ocean),#5ec4cf);min-height:160px}
+    .result:nth-child(2) .thumb{background:linear-gradient(145deg,#c4a574,#f4e9d8)}
+    .result:nth-child(3) .thumb{background:linear-gradient(145deg,#2d6a5a,#8fd4b8)}
+    .info{padding:20px 0}
+    .info h3{font-size:1.15rem;margin-bottom:6px}
+    .tags{font-size:.82rem;color:var(--muted);margin-bottom:10px}
+    .stars{color:var(--coral);font-size:.85rem}
+    .price{padding:20px;text-align:right;display:flex;flex-direction:column;justify-content:center}
+    .price b{font-size:1.5rem;color:var(--ocean-dark)}
+    .price span{font-size:.8rem;color:var(--muted)}
+    .btn{margin-top:10px;padding:10px 16px;border-radius:10px;background:var(--ocean);color:#fff;font-weight:600;font-size:.85rem;border:none;cursor:pointer}
+    @media(max-width:800px){.layout{grid-template-columns:1fr}.result{grid-template-columns:1fr}.price{text-align:left;padding:0 20px 20px}}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="brand">TravelGo</a>
+    <a href="index.html" style="font-size:.9rem;color:var(--ocean)">New search</a>
+  </header>
+  <div class="summary">
+    <h1>Lisbon · Dec 12–19 · 2 adults</h1>
+    <p>24 packages match your filters · prices include taxes</p>
+  </div>
+  <div class="layout">
+    <aside class="filters">
+      <h2>Filter</h2>
+      <span class="chip on">All-inclusive</span>
+      <span class="chip">Beachfront</span>
+      <span class="chip">City break</span>
+      <span class="chip">Under €800</span>
+    </aside>
+    <main class="results">
+      <article class="result">
+        <div class="thumb"></div>
+        <div class="info">
+          <h3>Tejo Riverside Hotel</h3>
+          <p class="tags">Alfama · breakfast · free cancel</p>
+          <p class="stars">★★★★☆ · 1,240 reviews</p>
+        </div>
+        <div class="price">
+          <b>€742</b>
+          <span>total for 2</span>
+          <button class="btn" type="button">Select</button>
+        </div>
+      </article>
+      <article class="result">
+        <div class="thumb"></div>
+        <div class="info">
+          <h3>Cascais Bay Escape</h3>
+          <p class="tags">Train to Lisbon 40 min · pool</p>
+          <p class="stars">★★★★★ · 892 reviews</p>
+        </div>
+        <div class="price">
+          <b>€898</b>
+          <span>total for 2</span>
+          <button class="btn" type="button">Select</button>
+        </div>
+      </article>
+      <article class="result">
+        <div class="thumb"></div>
+        <div class="info">
+          <h3>Chiado Boutique Stay</h3>
+          <p class="tags">Central · rooftop · late checkout</p>
+          <p class="stars">★★★★☆ · 567 reviews</p>
+        </div>
+        <div class="price">
+          <b>€815</b>
+          <span>total for 2</span>
+          <button class="btn" type="button">Select</button>
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

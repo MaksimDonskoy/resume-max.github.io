@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FinancePro — modern business banking</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0b1d32;
+      --navy-light: #122a45;
+      --teal: #14b8a6;
+      --teal-glow: rgba(20,184,166,.35);
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --card: #132338;
+      --font: "IBM Plex Sans", system-ui, sans-serif;
+      --mono: "IBM Plex Mono", monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font); background: var(--navy); color: var(--text); line-height: 1.5; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      padding: 20px 0;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; }
+    .logo-mark {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--teal), #0d9488);
+      display: grid; place-items: center; font-size: 1rem;
+    }
+    .nav { display: flex; gap: 28px; font-size: .9rem; color: var(--muted); }
+    .nav a:hover { color: var(--text); }
+    .hdr-btns { display: flex; gap: 10px; }
+    .btn-ghost { padding: 10px 18px; border-radius: 10px; border: 1px solid rgba(255,255,255,.15); font-size: .88rem; }
+    .btn-teal { padding: 10px 18px; border-radius: 10px; background: var(--teal); color: #042f2e; font-weight: 600; font-size: .88rem; }
+
+    .hero { padding: 48px 0 72px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }
+    .eyebrow { font-family: var(--mono); font-size: .75rem; color: var(--teal); letter-spacing: .08em; margin-bottom: 16px; }
+    h1 { font-size: clamp(2.2rem, 4vw, 3rem); line-height: 1.12; margin-bottom: 16px; }
+    .hero > div > p { color: var(--muted); max-width: 44ch; margin-bottom: 28px; }
+    .checks { list-style: none; display: grid; gap: 10px; margin-bottom: 32px; font-size: .92rem; }
+    .checks li::before { content: "✓ "; color: var(--teal); font-weight: 700; }
+
+    .preview-card {
+      background: var(--card);
+      border: 1px solid rgba(20,184,166,.2);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 24px 60px var(--teal-glow);
+    }
+    .preview-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; font-size: .85rem; color: var(--muted); }
+    .balance { font-size: 2.4rem; font-weight: 700; margin-bottom: 4px; }
+    .balance span { font-size: .9rem; color: var(--teal); font-weight: 600; }
+    .chart {
+      height: 120px; margin: 20px 0;
+      background: linear-gradient(180deg, rgba(20,184,166,.25) 0%, transparent 100%);
+      border-bottom: 2px solid var(--teal);
+      clip-path: polygon(0 80%, 15% 60%, 30% 70%, 45% 40%, 60% 55%, 75% 25%, 100% 35%, 100% 100%, 0 100%);
+    }
+    .txn { display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid rgba(255,255,255,.06); font-size: .88rem; }
+
+    .logos { padding: 32px 0; border-top: 1px solid rgba(255,255,255,.08); border-bottom: 1px solid rgba(255,255,255,.08); }
+    .logos p { text-align: center; font-size: .8rem; color: var(--muted); margin-bottom: 16px; }
+    .logo-row { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; font-weight: 600; color: rgba(255,255,255,.35); letter-spacing: .05em; }
+
+    .features { padding: 64px 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .feat { background: var(--navy-light); border-radius: 16px; padding: 28px; border: 1px solid rgba(255,255,255,.06); }
+    .feat h3 { font-size: 1.05rem; margin-bottom: 8px; }
+    .feat p { font-size: .88rem; color: var(--muted); }
+
+    footer { padding: 40px 0; font-size: .82rem; color: var(--muted); text-align: center; }
+
+    @media (max-width: 900px) {
+      .nav, .hdr-btns .btn-ghost { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" class="logo"><span class="logo-mark">₮</span> FinancePro</a>
+      <nav class="nav">
+        <a href="#product">Product</a>
+        <a href="dashboard.html">Platform</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <div class="hdr-btns">
+        <a href="dashboard.html" class="btn-ghost">Sign in</a>
+        <a href="dashboard.html" class="btn-teal">Open account</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">SOC 2 · PSD2 · FCA REGISTERED</p>
+        <h1>Business accounts and treasury in one dashboard</h1>
+        <p>Send USD, EUR, and GBP without hidden spreads. Automate payouts, reconcile in real time, and connect your ERP in an afternoon.</p>
+        <ul class="checks">
+          <li>Virtual IBANs in 28 currencies</li>
+          <li>FX at interbank + 0.25%</li>
+          <li>Role-based access for finance teams</li>
+        </ul>
+        <a href="dashboard.html" class="btn-teal">Launch demo dashboard</a>
+      </div>
+      <div class="preview-card">
+        <div class="preview-head"><span>Treasury · Live</span><span style="color:var(--teal)">● Connected</span></div>
+        <div class="balance">€2,847,391.20 <span>+4.2%</span></div>
+        <p style="font-size:.8rem;color:var(--muted)">Available balance across 6 entities</p>
+        <div class="chart" aria-hidden="true"></div>
+        <div class="txn"><span>Stripe payouts</span><span style="color:var(--teal)">+ €42,100</span></div>
+        <div class="txn"><span>AWS infrastructure</span><span>− €18,440</span></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="logos wrap">
+    <p>Trusted by finance teams at</p>
+    <div class="logo-row">
+      <span>NORTHLAYER</span>
+      <span>HELIX BIO</span>
+      <span>MERCURY OPS</span>
+      <span>STUDIO 48</span>
+    </div>
+  </section>
+
+  <section class="wrap features" id="product">
+    <article class="feat">
+      <h3>Multi-entity ledger</h3>
+      <p>Consolidated view with per-subsidiary permissions and audit export.</p>
+    </article>
+    <article class="feat">
+      <h3>Payment approvals</h3>
+      <p>Two-step workflows on Slack, email, or in-app with full traceability.</p>
+    </article>
+    <article class="feat" id="pricing">
+      <h3>Transparent pricing</h3>
+      <p>From €99/mo — no minimum balance, domestic transfers included.</p>
+    </article>
+  </section>
+
+  <footer class="wrap">FinancePro Ltd · Regulated electronic money institution</footer>
+</body>
+</html>

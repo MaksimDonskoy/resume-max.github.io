@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Проекты — FORMA</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0c0e10; --surface:#14181c; --text:#e8eaed; --muted:#8b9299; --lime:#c8f542; --border:rgba(255,255,255,.08); }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"DM Sans",system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+    header{border-bottom:1px solid var(--border);padding:18px 0}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .logo{font-weight:700;letter-spacing:.2em}
+    .logo span{color:var(--lime)}
+    .back{font-size:.9rem;color:var(--muted)}
+    .back:hover{color:var(--lime)}
+    .page-hero{padding:56px 0 40px;border-bottom:1px solid var(--border)}
+    .page-hero h1{font-family:"Instrument Serif",serif;font-size:clamp(2.2rem,4vw,3rem);font-weight:400;margin-bottom:12px}
+    .page-hero p{color:var(--muted);max-width:50ch}
+    .filters{display:flex;gap:12px;flex-wrap:wrap;padding:28px 0}
+    .filters button{padding:8px 18px;border-radius:999px;border:1px solid var(--border);background:transparent;color:var(--muted);font:inherit;cursor:pointer}
+    .filters button.active{background:var(--lime);color:#0a0c08;border-color:var(--lime);font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;padding-bottom:80px}
+    .project{background:var(--surface);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+    .project-img{height:280px;background:linear-gradient(145deg,#2a333c,#161a1e);display:flex;align-items:flex-end;padding:20px}
+    .project-img span{font-size:.75rem;color:var(--lime);letter-spacing:.12em;text-transform:uppercase}
+    .project-body{padding:24px}
+    .project-body h2{font-size:1.35rem;font-weight:500;margin-bottom:8px}
+    .meta{display:flex;gap:16px;font-size:.85rem;color:var(--muted);margin-bottom:12px}
+    .project-body p{font-size:.9rem;color:var(--muted);line-height:1.55}
+    @media(max-width:768px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="nav">
+      <a href="index.html" class="logo">FOR<span>MA</span></a>
+      <a href="index.html" class="back">← На главную</a>
+    </div>
+  </header>
+  <div class="wrap page-hero">
+    <h1>Портфолио проектов</h1>
+    <p>Жилые, общественные и промышленные объекты в России и СНГ. Статус указан на момент публикации.</p>
+  </div>
+  <div class="wrap filters">
+    <button type="button" class="active">Все</button>
+    <button type="button">Жильё</button>
+    <button type="button">Общественные</button>
+    <button type="button">В работе</button>
+  </div>
+  <main class="wrap grid">
+    <article class="project">
+      <div class="project-img"><span>Реализован · 2025</span></div>
+      <div class="project-body">
+        <h2>ЖК «Северная линия»</h2>
+        <div class="meta"><span>Москва</span><span>68 000 м²</span></div>
+        <p>Три башни с террасами-каньонами, общественная набережная и детский сад на стилобате.</p>
+      </div>
+    </article>
+    <article class="project">
+      <div class="project-img"><span>Строительство · 2026</span></div>
+      <div class="project-body">
+        <h2>Кампус «Полюс»</h2>
+        <div class="meta"><span>Новосибирск</span><span>24 000 м²</span></div>
+        <p>Образовательный центр с амфитеатром во дворе и деревянным фасадом из локальной древесины.</p>
+      </div>
+    </article>
+    <article class="project">
+      <div class="project-img"><span>Концепция · 2025</span></div>
+      <div class="project-body">
+        <h2>Станция «Восток»</h2>
+        <div class="meta"><span>Екатеринбург</span><span>Транспорт</span></div>
+        <p>Пересадочный узел с прозрачным навесом и сухим переходом к торговой галерее.</p>
+      </div>
+    </article>
+    <article class="project">
+      <div class="project-img"><span>Реализован · 2023</span></div>
+      <div class="project-body">
+        <h2>Галерея «Тихий двор»</h2>
+        <div class="meta"><span>Санкт-Петербург</span><span>3 200 м²</span></div>
+        <p>Реконструкция мануфактуры: музей, кафе и мастерские резидентов под одной крышей.</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

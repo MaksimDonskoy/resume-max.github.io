@@ -1,0 +1,8 @@
+.playwright-tmp/
+node_modules/
+*.zip
+MDV_portfolio_massive/
+.DS_Store
+Thumbs.db
+*.doc
+*.docx

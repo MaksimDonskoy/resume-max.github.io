@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Subscribe Bot</title>
+<style>
+:root{--accent:#fb7185;--bg:#0c1018;--panel:#151c28;--text:#eef3ff;--muted:#95a3b8;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html,body{margin:0;font-family:"Segoe UI",Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.demo-badge{position:fixed;right:16px;bottom:16px;z-index:99;padding:8px 12px;border-radius:999px;background:rgba(255,196,64,.16);border:1px solid rgba(255,196,64,.45);color:#ffd977;font-size:12px;font-weight:800;letter-spacing:.08em;pointer-events:none}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+[data-phone]{box-shadow:0 30px 80px rgba(0,0,0,.45)}.msg{max-width:88%;padding:10px 12px;border-radius:14px;font-size:14px;line-height:1.35}.bot{background:#1b2738;justify-self:start}.user{background:var(--accent);color:#061018;justify-self:end}.btn{padding:9px 10px;border-radius:12px;border:1px solid #2a3a52;background:#152033;color:var(--text);text-align:left}
+</style></head><body data-app>
+
+<div data-phone style="width:390px;min-height:760px;margin:24px auto;border-radius:36px;border:10px solid #1f2937;background:#0e1624;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto">
+  <header style="padding:14px 16px;background:#111827;display:flex;gap:10px;align-items:center;border-bottom:1px solid #243044">
+    <span style="width:38px;height:38px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-weight:800;color:#071018">S</span>
+    <div><strong style="display:block;font-size:14px">Subscribe Bot</strong><span style="font-size:12px;color:var(--muted)">online · demo bot</span></div>
+  </header>
+  <div id="chat" style="padding:14px;display:grid;gap:10px;align-content:start;overflow:auto" data-seeded="1"><div class="msg bot">Демонстрационный сценарий готов. Нажмите кнопку ниже.</div></div>
+  <div id="kb" style="padding:10px 12px;border-top:1px solid #243044;display:grid;gap:8px"></div>
+</div>
+<script>
+const chat=document.getElementById('chat'),kb=document.getElementById('kb');
+function add(t,w='bot'){const m=document.createElement('div');m.className='msg '+w;m.textContent=t;chat.appendChild(m);}
+function menu(btns){kb.innerHTML='';btns.forEach(([l,a])=>{const b=document.createElement('button');b.className='btn';b.textContent=l;b.onclick=()=>{add(l,'user');a();};kb.appendChild(b);});}
+add('Subscribe Bot — демо-подписки.');
+menu([['Тарифы',()=>{add('Basic $9 · Pro $19 · Team $39');menu([['Оформить Pro',()=>{add('Подписка активирована до 25.12 (демо).');menu([['Отменить',()=>add('Автопродление отключено локально.')]]);}]]);}],['Статус',()=>add('Текущий план: Demo Free')]]);
+</script>
+<div class="demo-badge">DEMO</div>
+<script>window.waitForDemoReady=true;document.documentElement.dataset.ready='1';</script></body></html>

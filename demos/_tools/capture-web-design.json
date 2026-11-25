@@ -1,0 +1,122 @@
+[
+  {
+    "url": "demos/web-design/forma/index.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/forma/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/forma/projects.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/forma/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/forma/index.html",
+    "width": 390,
+    "height": 844,
+    "scale": 2,
+    "out": "image/portfolio/web-design/forma/02.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/medica/index.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/medica/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/medica/services.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/medica/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/medica/index.html",
+    "width": 390,
+    "height": 844,
+    "scale": 2,
+    "out": "image/portfolio/web-design/medica/02.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/mono/index.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/mono/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/mono/catalog.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/mono/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/mono/index.html",
+    "width": 390,
+    "height": 844,
+    "scale": 2,
+    "out": "image/portfolio/web-design/mono/02.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/finance-pro/index.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/finance-pro/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/finance-pro/dashboard.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/finance-pro/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/finance-pro/index.html",
+    "width": 390,
+    "height": 844,
+    "scale": 2,
+    "out": "image/portfolio/web-design/finance-pro/02.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/travel-go/index.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/travel-go/cover.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/travel-go/search.html",
+    "width": 1440,
+    "height": 900,
+    "scale": 2,
+    "out": "image/portfolio/web-design/travel-go/01.webp",
+    "quality": 84
+  },
+  {
+    "url": "demos/web-design/travel-go/index.html",
+    "width": 390,
+    "height": 844,
+    "scale": 2,
+    "out": "image/portfolio/web-design/travel-go/02.webp",
+    "quality": 84
+  }
+]

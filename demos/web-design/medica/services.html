@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Услуги — MEDICA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --sky:#e8f4fc; --white:#fff; --ink:#1a2b3c; --muted:#5c6f82; --accent:#0d8ecf; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--sky);color:var(--ink)}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+    header{background:var(--white);padding:16px 0;border-bottom:1px solid rgba(13,142,207,.12)}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:700;color:var(--accent)}
+    .intro{padding:48px 0 32px}
+    .intro h1{font-size:2.2rem;margin-bottom:10px}
+    .intro p{color:var(--muted);max-width:52ch}
+    .layout{display:grid;grid-template-columns:240px 1fr;gap:32px;padding-bottom:64px}
+    .sidebar{background:var(--white);border-radius:16px;padding:20px;height:fit-content}
+    .sidebar h2{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+    .sidebar ul{list-style:none;display:grid;gap:8px;font-size:.92rem}
+    .sidebar li{padding:10px 12px;border-radius:10px}
+    .sidebar li.on{background:var(--sky);color:var(--accent);font-weight:600}
+    .service-list{display:grid;gap:16px}
+    .row{
+      display:grid;grid-template-columns:1fr auto auto;gap:16px;align-items:center;
+      background:var(--white);padding:20px 24px;border-radius:14px;border:1px solid rgba(13,142,207,.08)
+    }
+    .row h3{font-size:1.05rem;margin-bottom:4px}
+    .row p{font-size:.85rem;color:var(--muted)}
+    .price{font-weight:700;color:var(--accent);white-space:nowrap}
+    .book{font-size:.85rem;font-weight:600;color:var(--accent)}
+    @media(max-width:800px){
+      .layout{grid-template-columns:1fr}
+      .row{grid-template-columns:1fr;gap:8px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a href="index.html" class="brand">← MEDICA</a>
+      <a href="index.html">На главную</a>
+    </div>
+  </header>
+  <div class="wrap intro">
+    <h1>Услуги и прайс</h1>
+    <p>Точные цены фиксируем при записи. Действует программа лояльности для постоянных пациентов −10%.</p>
+  </div>
+  <div class="wrap layout">
+    <aside class="sidebar">
+      <h2>Разделы</h2>
+      <ul>
+        <li class="on">Терапия</li>
+        <li>Диагностика</li>
+        <li>Стоматология</li>
+        <li>Детское отделение</li>
+      </ul>
+    </aside>
+    <main class="service-list">
+      <article class="row">
+        <div>
+          <h3>Первичный приём терапевта</h3>
+          <p>Осмотр, назначение, план обследования</p>
+        </div>
+        <span class="price">3 200 ₽</span>
+        <a href="index.html#appointment" class="book">Запись</a>
+      </article>
+      <article class="row">
+        <div>
+          <h3>УЗИ органов брюшной полости</h3>
+          <p>С заключением врача-диагноста</p>
+        </div>
+        <span class="price">4 500 ₽</span>
+        <a href="index.html#appointment" class="book">Запись</a>
+      </article>
+      <article class="row">
+        <div>
+          <h3>Холтер ЭКГ 24 часа</h3>
+          <p>Установка, расшифровка, консультация кардиолога</p>
+        </div>
+        <span class="price">6 800 ₽</span>
+        <a href="index.html#appointment" class="book">Запись</a>
+      </article>
+      <article class="row">
+        <div>
+          <h3>Комплекс «Ежегодный чек-ап»</h3>
+          <p>Анализы, ЭКГ, УЗИ, приём терапевта</p>
+        </div>
+        <span class="price">18 900 ₽</span>
+        <a href="index.html#appointment" class="book">Запись</a>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

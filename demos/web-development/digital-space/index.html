@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digital Space</title>
+<style>
+:root{--accent:#a78bfa;--bg:#0c1018;--panel:#151c28;--text:#eef3ff;--muted:#95a3b8;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html,body{margin:0;font-family:"Segoe UI",Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.demo-badge{position:fixed;right:16px;bottom:16px;z-index:99;padding:8px 12px;border-radius:999px;background:rgba(255,196,64,.16);border:1px solid rgba(255,196,64,.45);color:#ffd977;font-size:12px;font-weight:800;letter-spacing:.08em;pointer-events:none}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+
+</style></head><body data-app>
+
+<main style="max-width:1280px;min-height:800px;margin:0 auto;padding:36px 40px 100px;display:grid;gap:24px">
+<header><h1 style="margin:0;font-size:42px">DIGITAL SPACE</h1><p style="color:var(--muted)">IT-агентство — демо-лендинг с табами и фильтром кейсов</p></header>
+<div style="display:flex;gap:10px"><button class="tab is-on" data-tab="about">О нас</button><button class="tab" data-tab="stack">Стек</button><button class="tab" data-tab="process">Процесс</button></div>
+<section id="tabBody" style="padding:22px;border-radius:20px;background:var(--panel);border:1px solid var(--line);min-height:140px"></section>
+<details style="padding:16px 20px;border-radius:16px;background:var(--panel);border:1px solid var(--line)"><summary style="font-weight:700;cursor:pointer">FAQ по сотрудничеству (демо)</summary><p style="margin:12px 0 0;color:var(--muted)">Сроки и бюджет считаются локально, без CRM.</p></details>
+<div style="display:flex;gap:10px"><button class="case-f is-on" data-case="all">Все кейсы</button><button class="case-f" data-case="web">Web</button><button class="case-f" data-case="bot">Bots</button><button class="case-f" data-case="auto">Automation</button></div>
+<div id="cases" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px"></div>
+</main>
+<style>.tab,.case-f{padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:#131b2a;color:var(--text)}.tab.is-on,.case-f.is-on{background:var(--accent);color:#1a1033;border-color:transparent}.case{padding:16px;border-radius:16px;background:#121a2a;border:1px solid var(--line)}.case[hidden]{display:none}</style>
+<script>
+const tabs={about:'Проектируем MVP и продукты для B2B/B2C. Это учебный блок.',stack:'React, Node, PostgreSQL, n8n, Telegram API — демо-перечень.',process:'Бриф → прототип → разработка → релиз. Без реальных контрактов.'};
+const cases=[{t:'Fin portal',k:'web'},{t:'Shop bot',k:'bot'},{t:'Price sync',k:'auto'},{t:'Booking UI',k:'web'},{t:'Support AI',k:'bot'},{t:'CRM bridge',k:'auto'}];
+const body=document.getElementById('tabBody'),box=document.getElementById('cases');
+function tab(k){body.textContent=tabs[k];}
+function casesRender(f){box.innerHTML='';cases.filter(c=>f==='all'||c.k===f).forEach(c=>{const el=document.createElement('article');el.className='case';el.textContent=c.t+' · '+c.k;box.appendChild(el);});}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('is-on'));b.classList.add('is-on');tab(b.dataset.tab);}));
+document.querySelectorAll('.case-f').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.case-f').forEach(x=>x.classList.remove('is-on'));b.classList.add('is-on');casesRender(b.dataset.case);}));
+tab('about');casesRender('all');
+</script>
+<div class="demo-badge">DEMO</div>
+</body></html>

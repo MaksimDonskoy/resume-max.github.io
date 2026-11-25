@@ -1,0 +1,122 @@
+[
+  {
+    "url": "demos/advertising/burger-club/square.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1080,
+    "scale": 1,
+    "out": "image/portfolio/advertising/burger-club/cover.webp"
+  },
+  {
+    "url": "demos/advertising/burger-club/stories.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1920,
+    "scale": 1,
+    "out": "image/portfolio/advertising/burger-club/01.webp"
+  },
+  {
+    "url": "demos/advertising/burger-club/banner.html",
+    "selector": "[data-card]",
+    "width": 1600,
+    "height": 600,
+    "scale": 1,
+    "out": "image/portfolio/advertising/burger-club/02.webp"
+  },
+  {
+    "url": "demos/advertising/dental-pro/square.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1080,
+    "scale": 1,
+    "out": "image/portfolio/advertising/dental-pro/cover.webp"
+  },
+  {
+    "url": "demos/advertising/dental-pro/stories.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1920,
+    "scale": 1,
+    "out": "image/portfolio/advertising/dental-pro/01.webp"
+  },
+  {
+    "url": "demos/advertising/dental-pro/banner.html",
+    "selector": "[data-card]",
+    "width": 1600,
+    "height": 600,
+    "scale": 1,
+    "out": "image/portfolio/advertising/dental-pro/02.webp"
+  },
+  {
+    "url": "demos/advertising/motor-lab/square.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1080,
+    "scale": 1,
+    "out": "image/portfolio/advertising/motor-lab/cover.webp"
+  },
+  {
+    "url": "demos/advertising/motor-lab/stories.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1920,
+    "scale": 1,
+    "out": "image/portfolio/advertising/motor-lab/01.webp"
+  },
+  {
+    "url": "demos/advertising/motor-lab/banner.html",
+    "selector": "[data-card]",
+    "width": 1600,
+    "height": 600,
+    "scale": 1,
+    "out": "image/portfolio/advertising/motor-lab/02.webp"
+  },
+  {
+    "url": "demos/advertising/beauty-room/square.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1080,
+    "scale": 1,
+    "out": "image/portfolio/advertising/beauty-room/cover.webp"
+  },
+  {
+    "url": "demos/advertising/beauty-room/stories.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1920,
+    "scale": 1,
+    "out": "image/portfolio/advertising/beauty-room/01.webp"
+  },
+  {
+    "url": "demos/advertising/beauty-room/banner.html",
+    "selector": "[data-card]",
+    "width": 1600,
+    "height": 600,
+    "scale": 1,
+    "out": "image/portfolio/advertising/beauty-room/02.webp"
+  },
+  {
+    "url": "demos/advertising/nova-estate/square.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1080,
+    "scale": 1,
+    "out": "image/portfolio/advertising/nova-estate/cover.webp"
+  },
+  {
+    "url": "demos/advertising/nova-estate/stories.html",
+    "selector": "[data-card]",
+    "width": 1080,
+    "height": 1920,
+    "scale": 1,
+    "out": "image/portfolio/advertising/nova-estate/01.webp"
+  },
+  {
+    "url": "demos/advertising/nova-estate/banner.html",
+    "selector": "[data-card]",
+    "width": 1600,
+    "height": 600,
+    "scale": 1,
+    "out": "image/portfolio/advertising/nova-estate/02.webp"
+  }
+]
