@@ -6,3 +6,7 @@ MDV_portfolio_massive/
 Thumbs.db
 *.doc
 *.docx
+*.tmp
+*.log
+.idea/
+.vscode/
